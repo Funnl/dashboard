@@ -9,4 +9,4 @@
 
 * Navigate to local directory in terminal
 * `divshot server`
-* (localhost:3474)[http://localhost:3474]
+* [localhost:3474](http://localhost:3474)
