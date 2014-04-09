@@ -90,7 +90,7 @@ img{
     display: inline-block;
 }
 #header .logo span {
-    font-weight: 700;
+    font-weight: 400;
 }
 #header .toggle-navigation button:hover,
 #header .toggle-navigation button:active,
