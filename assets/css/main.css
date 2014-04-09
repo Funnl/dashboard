@@ -75,16 +75,18 @@ img{
     float: left;
     width: 240px;
     min-height: 80px;
-    padding: 0 0 0 10px;
+    padding: 0 0 0 2px;
     position: relative;
-    background: #1abc9c url('../img/logo.png') no-repeat 25px 26px;
+    background: #8ad1c9 url('../img/logo.png') no-repeat 25px 28px; 
+    /* original color
+    background: #1abc9c url('../img/logo.png') no-repeat 25px 26px; */
 
 }
 #header .logo {
-    color: #fff;
-    font-size: 1.7em;
-    text-transform: uppercase;
-    padding: 23px 0 0 63px;
+    color: #f9faea;
+    font-size: 2.6em;
+    text-transform: lowercase;
+    padding: 16px 0 0 60px;
     display: inline-block;
 }
 #header .logo span {
@@ -501,12 +503,11 @@ display: block;
 color: #fff !important;
 }
 
-.sidebarRight .list-contacts .list-item .list-item-image i {
+.sidebarRight .list-contacts .list-item .list-item-image img {
 float: left;
 width: 30px;
 height: 30px;
-margin-top: 8px;
-
+margin-right: 5px;
 }
 
 .sidebarRight .list-contacts .list-item .list-item-content h4 {
