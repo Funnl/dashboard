@@ -1,413 +1,648 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SpaceLab</title>
     <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Dashboard - SB Admin</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Fonts from Font Awsome -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- CSS Animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Custom styles for this theme -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Vector Map  -->
+    <link rel="stylesheet" href="assets/plugins/jvectormap/css/jquery-jvectormap-1.2.2.css">
+    <!-- ToDos  -->
+    <link rel="stylesheet" href="assets/plugins/todo/css/todos.css">
+    <!-- Morris  -->
+    <link rel="stylesheet" href="assets/plugins/morris/css/morris.css">
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <!-- Feature detection -->
+    <script src="assets/js/modernizr-2.6.2.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+</head>
 
-    <!-- Add custom CSS here -->
-    <link href="css/sb-admin.css" rel="stylesheet">
-    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-    <!-- Page Specific CSS -->
-    <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
-  </head>
-
-  <body>
-
-    <div id="wrapper">
-
-      <!-- Sidebar -->
-      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html">SB Admin</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav side-nav">
-            <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
-            <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
-            <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
-            <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
-            <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
-            <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
-            <li><a href="blank-page.html"><i class="fa fa-file"></i> Blank Page</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Dropdown Item</a></li>
-                <li><a href="#">Another Item</a></li>
-                <li><a href="#">Third Item</a></li>
-                <li><a href="#">Last Item</a></li>
-              </ul>
-            </li>
-          </ul>
-
-          <ul class="nav navbar-nav navbar-right navbar-user">
-            <li class="dropdown messages-dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li class="dropdown-header">7 New Messages</li>
-                <li class="message-preview">
-                  <a href="#">
-                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                    <span class="name">John Smith:</span>
-                    <span class="message">Hey there, I wanted to ask you something...</span>
-                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                  </a>
-                </li>
-                <li class="divider"></li>
-                <li class="message-preview">
-                  <a href="#">
-                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                    <span class="name">John Smith:</span>
-                    <span class="message">Hey there, I wanted to ask you something...</span>
-                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                  </a>
-                </li>
-                <li class="divider"></li>
-                <li class="message-preview">
-                  <a href="#">
-                    <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                    <span class="name">John Smith:</span>
-                    <span class="message">Hey there, I wanted to ask you something...</span>
-                    <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                  </a>
-                </li>
-                <li class="divider"></li>
-                <li><a href="#">View Inbox <span class="badge">7</span></a></li>
-              </ul>
-            </li>
-            <li class="dropdown alerts-dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Default <span class="label label-default">Default</span></a></li>
-                <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
-                <li><a href="#">Success <span class="label label-success">Success</span></a></li>
-                <li><a href="#">Info <span class="label label-info">Info</span></a></li>
-                <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
-                <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
-                <li class="divider"></li>
-                <li><a href="#">View All</a></li>
-              </ul>
-            </li>
-            <li class="dropdown user-dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> John Smith <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
-                <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
-                <li class="divider"></li>
-                <li><a href="#"><i class="fa fa-power-off"></i> Log Out</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </nav>
-
-      <div id="page-wrapper">
-
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>Dashboard <small>Statistics Overview</small></h1>
-            <ol class="breadcrumb">
-              <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
-            </ol>
-            <div class="alert alert-success alert-dismissable">
-              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-              Welcome to SB Admin by <a class="alert-link" href="http://startbootstrap.com">Start Bootstrap</a>! Feel free to use this template for your admin needs! We are using a few different plugins to handle the dynamic tables and charts, so make sure you check out the necessary documentation links provided.
+<body>
+    <section id="container">
+        <header id="header">
+            <!--logo start-->
+            <div class="brand">
+                <a href="index.html" class="logo"><span>Space</span>Lab</a>
             </div>
-          </div>
-        </div><!-- /.row -->
+            <!--logo end-->
+            <div class="toggle-navigation toggle-left">
+                <button type="button" class="btn btn-default" id="toggle-left" data-toggle="tooltip" data-placement="right" title="Toggle Navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+            <div class="user-nav">
+                <ul>
+                    <li class="dropdown messages">
+                        <span class="badge badge-danager animated bounceIn" id="new-messages">5</span>
+                        <button type="button" class="btn btn-default dropdown-toggle options" id="toggle-mail" data-toggle="dropdown">
+                            <i class="fa fa-envelope"></i>
+                        </button>
+                        <ul class="dropdown-menu alert animated fadeInDown">
+                            <li>
+                                <h1>You have <strong>5</strong> new messages</h1>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="profile-photo">
+                                        <img src="assets/img/avatar.gif" alt="" class="img-circle">
+                                    </div>
+                                    <div class="message-info">
+                                        <span class="sender">James Bagian</span>
+                                        <span class="time">30 mins</span>
+                                        <div class="message-content">Lorem ipsum dolor sit amet, elit rutrum felis sed erat augue fusce...</div>
+                                    </div>
+                                </a>
+                            </li>
 
-        <div class="row">
-          <div class="col-lg-3">
-            <div class="panel panel-info">
-              <div class="panel-heading">
+                            <li>
+                                <a href="#">
+                                    <div class="profile-photo">
+                                        <img src="assets/img/avatar1.gif" alt="" class="img-circle">
+                                    </div>
+                                    <div class="message-info">
+                                        <span class="sender">Jeffrey Ashby</span>
+                                        <span class="time">2 hour</span>
+                                        <div class="message-content">hendrerit pellentesque, iure tincidunt, faucibus vitae dolor aliquam...</div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="profile-photo">
+                                        <img src="assets/img/avatar2.gif" alt="" class="img-circle">
+                                    </div>
+                                    <div class="message-info">
+                                        <span class="sender">John Douey</span>
+                                        <span class="time">3 hours</span>
+                                        <div class="message-content">Penatibus suspendisse sit pellentesque eu accumsan condimentum nec...</div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    <div class="profile-photo">
+                                        <img src="assets/img/avatar3.gif" alt="" class="img-circle">
+                                    </div>
+                                    <div class="message-info">
+                                        <span class="sender">Ellen Baker</span>
+                                        <span class="time">7 hours</span>
+                                        <div class="message-content">Sem dapibus in, orci bibendum faucibus tellus, justo arcu...</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="profile-photo">
+                                        <img src="assets/img/avatar4.gif" alt="" class="img-circle">
+                                    </div>
+                                    <div class="message-info">
+                                        <span class="sender">Ivan Bella</span>
+                                        <span class="time">6 hours</span>
+                                        <div class="message-content">Curabitur metus faucibus sapien elit, ante molestie sapien...</div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li><a href="#">Check all messages <i class="fa fa-angle-right"></i></a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="profile-photo">
+                        <img src="assets/img/avatar.png" alt="" class="img-circle">
+                    </li>
+                    <li class="dropdown settings">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      Mike Adams <i class="fa fa-angle-down"></i>
+                    </a>
+                        <ul class="dropdown-menu animated fadeInDown">
+                            <li>
+                                <a href="#"><i class="fa fa-user"></i> Profile</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-calendar"></i> Calendar</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge badge-danager" id="user-inbox">5</span></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-power-off"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="toggle-navigation toggle-right">
+                            <button type="button" class="btn btn-default" id="toggle-right">
+                                <i class="fa fa-comment"></i>
+                            </button>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </header>
+        <!--sidebar left start-->
+        <aside class="sidebar">
+            <div id="leftside-navigation" class="nano">
+                <ul class="nano-content">
+                    <li class="active">
+                        <a href="index.html"><i class="fa fa-dashboard"></i><span>Dashboard</span></a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>UI Elements</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+
+                            <li><a href="ui-alerts-notifications.html">Alerts &amp; Notifications</a>
+                            </li>
+                            <li><a href="ui-panels.html">Panels</a>
+                            </li>
+                            <li><a href="ui-buttons.html">Buttons</a>
+                            </li>
+                            <li><a href="ui-slider-progress.html">Sliders &amp; Progress</a>
+                            </li>
+                            <li><a href="ui-modals-popups.html">Modals &amp; Popups</a>
+                            </li>
+                            <li><a href="ui-icons.html">Icons</a>
+                            </li>
+                            <li><a href="ui-grid.html">Grid</a>
+                            </li>
+                            <li><a href="ui-tabs-accordions.html">Tabs &amp; Accordions</a>
+                            </li>
+                            <li><a href="ui-nestable-list.html">Nestable Lists</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-table"></i><span>Tables</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="tables-basic.html">Basic Tables</a>
+                            </li>
+                            <li><a href="tables-data.html">Data Tables</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa fa-tasks"></i><span>Forms</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="forms-components.html">Components</a>
+                            </li>
+                            <li><a href="forms-validation.html">Validation</a>
+                            </li>
+                            <li><a href="forms-mask.html">Mask</a>
+                            </li>
+                            <li><a href="forms-wizard.html">Wizard</a>
+                            </li>
+                            <li><a href="forms-multiple-file.html">Multiple File Upload</a>
+                            </li>
+                            <li><a href="forms-wysiwyg.html">WYSIWYG Editor</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-envelope"></i><span>Mail</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="mail-inbox.html">Inbox</a>
+                            </li>
+                            <li><a href="mail-compose.html">Compose Mail</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-bar-chart-o"></i><span>Charts</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="charts-chartjs.html">Chartjs</a>
+                            </li>
+                            <li><a href="charts-morris.html">Morris</a>
+                            </li>
+                          <li><a href="charts-c3.html">C3 Charts</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-map-marker"></i><span>Maps</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="map-google.html">Google Map</a>
+                            </li>
+                            <li><a href="map-vector.html">Vector Map</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="typography.html"><i class="fa fa-text-height"></i><span>Typography</span></a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="javascript:void(0);"><i class="fa fa-file"></i><span>Pages</span><i class="arrow fa fa-angle-right pull-right"></i></a>
+                        <ul>
+                            <li><a href="pages-blank.html">Blank Page</a>
+                            </li>
+                            <li><a href="pages-login.html">Login</a>
+                            </li>
+                            <li><a href="pages-sign-up.html">Sign Up</a>
+                            </li>
+                            <li><a href="pages-calendar.html">Calendar</a>
+                            </li>
+                            <li><a href="pages-timeline.html">Timeline</a>
+                            </li>
+                            <li><a href="pages-404.html">404</a>
+                            </li>
+                            <li><a href="pages-500.html">500</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+        <!--sidebar left end-->
+        <!--main content start-->
+        <section class="main-content-wrapper">
+            <section id="main-content">
+                <!--tiles start-->
                 <div class="row">
-                  <div class="col-xs-6">
-                    <i class="fa fa-comments fa-5x"></i>
-                  </div>
-                  <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">456</p>
-                    <p class="announcement-text">New Mentions!</p>
-                  </div>
-                </div>
-              </div>
-              <a href="#">
-                <div class="panel-footer announcement-bottom">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      View Mentions
+                    <div class="col-md-3 col-sm-6">
+                        <div class="dashboard-tile detail tile-red">
+                            <div class="content">
+                                <h1 class="text-left timer" data-from="0" data-to="180" data-speed="2500"> </h1>
+                                <p>New Users</p>
+                            </div>
+                            <div class="icon"><i class="fa fa-users"></i>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-6 text-right">
-                      <i class="fa fa-arrow-circle-right"></i>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="dashboard-tile detail tile-turquoise">
+                            <div class="content">
+                                <h1 class="text-left timer" data-from="0" data-to="56" data-speed="2500"> </h1>
+                                <p>New Comments</p>
+                            </div>
+                            <div class="icon"><i class="fa fa-comments"></i>
+                            </div>
+                        </div>
                     </div>
-                  </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="dashboard-tile detail tile-blue">
+                            <div class="content">
+                                <h1 class="text-left timer" data-from="0" data-to="32" data-speed="2500"> </h1>
+                                <p>New Messages</p>
+                            </div>
+                            <div class="icon"><i class="fa fa fa-envelope"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="dashboard-tile detail tile-purple">
+                            <div class="content">
+                                <h1 class="text-left timer" data-to="105" data-speed="2500"> </h1>
+                                <p>New Sales</p>
+                            </div>
+                            <div class="icon"><i class="fa fa-bar-chart-o"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="panel panel-warning">
-              <div class="panel-heading">
+                <!--tiles end-->
+                <!--dashboard charts and map start-->
                 <div class="row">
-                  <div class="col-xs-6">
-                    <i class="fa fa-check fa-5x"></i>
-                  </div>
-                  <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">12</p>
-                    <p class="announcement-text">To-Do Items</p>
-                  </div>
-                </div>
-              </div>
-              <a href="#">
-                <div class="panel-footer announcement-bottom">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      Complete Tasks
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Sales for 2014</h3>
+                                <div class="actions pull-right">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <i class="fa fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div id="sales-chart" style="height: 250px;"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-6 text-right">
-                      <i class="fa fa-arrow-circle-right"></i>
+                    <div class="col-md-6">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Office loctions</h3>
+                                <div class="actions pull-right">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <i class="fa fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="map" id="map" style="height: 250px;"></div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="panel panel-danger">
-              <div class="panel-heading">
+                <!--dashboard charts and map end-->
+                <!--ToDo start-->
                 <div class="row">
-                  <div class="col-xs-6">
-                    <i class="fa fa-tasks fa-5x"></i>
-                  </div>
-                  <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">18</p>
-                    <p class="announcement-text">Crawl Errors</p>
-                  </div>
-                </div>
-              </div>
-              <a href="#">
-                <div class="panel-footer announcement-bottom">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      Fix Issues
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">To do list</h3>
+                                <div class="actions pull-right">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <i class="fa fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input id="new-todo" type="text" class="form-control" placeholder="What needs to be done?">
+                                            <section id='main'>
+                                                <ul id='todo-list'></ul>
+                                            </section>
+                                        </div>
+                                        <div class="form-group">
+                                            <button id="todo-enter" class="btn btn-primary pull-right">Submit</button>
+                                            <div id='todo-count'></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h3 class="panel-title">Server Status</h3>
+                                        <div class="actions pull-right">
+                                            <i class="fa fa-chevron-down"></i>
+                                            <i class="fa fa-times"></i>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+
+                                  <span class="sublabel">Memory Usage</span>
+                                  <div class="progress progress-striped">
+                                    <div class="progress-bar progress-bar-info" style="width: 20%">20%</div>
+                                  </div><!-- progress -->
+
+                                  <span class="sublabel">CPU Usage </span>
+                                  <div class="progress progress-striped">
+                                   <div class="progress-bar progress-bar-default" style="width: 60%">60%</div>
+                                  </div><!-- progress -->
+
+                                  <span class="sublabel">Disk Usage </span>
+                                  <div class="progress progress-striped">
+                                    <div class="progress-bar progress-bar-primary" style="width: 80%">80%</div>
+                                  </div><!-- progress -->
+                  
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-6 text-right">
-                      <i class="fa fa-arrow-circle-right"></i>
+                    <div class="col-md-4">
+                        <div class="panel panel-solid-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Weather</h3>
+                                <div class="actions pull-right">
+                                    <i class="fa fa-chevron-down"></i>
+                                    <i class="fa fa-times"></i>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h3 class="text-center small-thin uppercase">Today</h3>
+                                        <div class="text-center">
+                                            <canvas id="clear-day" width="110" height="110"></canvas>
+                                            <h4>62°C</h4>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="text-center small-thin uppercase">Tonight</h3>
+                                        <div class="text-center">
+                                            <canvas id="partly-cloudy-night" width="110" height="110"></canvas>
+                                            <h4>44°C</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h6 class="text-center small-thin uppercase">Mon</h6>
+                                        <div class="text-center">
+                                            <canvas id="partly-cloudy-day" width="32" height="32"></canvas>
+                                            <span>48°C</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <h6 class="text-center small-thin uppercase">Mon</h6>
+                                        <div class="text-center">
+                                            <canvas id="rain" width="32" height="32"></canvas>
+                                            <span>39°C</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <h6 class="text-center small-thin uppercase">Tue</h6>
+                                        <div class="text-center">
+                                            <canvas id="sleet" width="32" height="32"></canvas>
+                                            <span>32°C</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <h6 class="text-center small-thin uppercase">Wed</h6>
+                                        <div class="text-center">
+                                            <canvas id="snow" width="32" height="32"></canvas>
+                                            <span>28°C</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <h6 class="text-center small-thin uppercase">Thu</h6>
+                                        <div class="text-center">
+                                            <canvas id="wind" width="32" height="32"></canvas>
+                                            <span>40°C</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-2">
+                                        <h6 class="text-center small-thin uppercase">Fri</h6>
+                                        <div class="text-center">
+                                            <canvas id="fog" width="32" height="32"></canvas>
+                                            <span>42°C</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-3">
-            <div class="panel panel-success">
-              <div class="panel-heading">
-                <div class="row">
-                  <div class="col-xs-6">
-                    <i class="fa fa-comments fa-5x"></i>
-                  </div>
-                  <div class="col-xs-6 text-right">
-                    <p class="announcement-heading">56</p>
-                    <p class="announcement-text">New Orders!</p>
-                  </div>
-                </div>
-              </div>
-              <a href="#">
-                <div class="panel-footer announcement-bottom">
-                  <div class="row">
-                    <div class="col-xs-6">
-                      Complete Orders
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <h4>Browser Summary</h4>
+                                <div id="donut-example"></div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-xs-6 text-right">
-                      <i class="fa fa-arrow-circle-right"></i>
-                    </div>
-                  </div>
                 </div>
-              </a>
+
+                <!--ToDo end-->
+            </section>
+        </section>
+        <!--main content end-->
+        <!--sidebar right start-->
+        <aside class="sidebarRight">
+            <div id="leftside-navigation">
+                <div class="sidebar-heading"><i class="fa fa-user"></i> Contacts</div>
+                <div class="sidebar-title">online</div>
+                <div class="list-contacts">
+                    <a href="javascript:void(0)" class="list-item">
+                        <div class="list-item-image">
+                            <img src="assets/img/avatar.gif" class="img-circle">
+                        </div>
+                        <div class="list-item-content">
+                            <h4>James Bagian</h4>
+                            <p>Los Angeles, CA</p>
+                        </div>
+                        <div class="item-status item-status-online"></div>
+                    </a>
+                    <a href="javascript:void(0)" class="list-item">
+                        <div class="list-item-image">
+                            <img src="assets/img/avatar1.gif" class="img-circle">
+                        </div>
+                        <div class="list-item-content">
+                            <h4>Jeffrey Ashby</h4>
+                            <p>New York, NY</p>
+                        </div>
+                        <div class="item-status item-status-online"></div>
+                    </a>
+                    <a href="javascript:void(0)" class="list-item">
+                        <div class="list-item-image">
+                            <img src="assets/img/avatar2.gif" class="img-circle">
+                        </div>
+                        <div class="list-item-content">
+                            <h4>John Douey</h4>
+                            <p>Dallas, TX</p>
+                        </div>
+                        <div class="item-status item-status-online"></div>
+                    </a>
+                    <a href="javascript:void(0)" class="list-item">
+                        <div class="list-item-image">
+                            <img src="assets/img/avatar3.gif" class="img-circle">
+                        </div>
+                        <div class="list-item-content">
+                            <h4>Ellen Baker</h4>
+                            <p>London</p>
+                        </div>
+                        <div class="item-status item-status-away"></div>
+                    </a>
+                </div>
+
+                <div class="sidebar-title">offline</div>
+                <div class="list-contacts">
+                    <a href="javascript:void(0)" class="list-item">
+                        <div class="list-item-image">
+                            <img src="assets/img/avatar4.gif" class="img-circle">
+                        </div>
+                        <div class="list-item-content">
+                            <h4>Ivan Bella</h4>
+                            <p>Tokyo, Japan</p>
+                        </div>
+                        <div class="item-status"></div>
+                    </a>
+                    <a href="javascript:void(0)" class="list-item">
+                        <div class="list-item-image">
+                            <img src="assets/img/avatar5.gif" class="img-circle">
+                        </div>
+                        <div class="list-item-content">
+                            <h4>Gerald Carr</h4>
+                            <p>Seattle, WA</p>
+                        </div>
+                        <div class="item-status"></div>
+                    </a>
+                    <a href="javascript:void(0)" class="list-item">
+                        <div class="list-item-image">
+                            <img src="assets/img/avatar6.gif" class="img-circle">
+                        </div>
+                        <div class="list-item-content">
+                            <h4>Viktor Gorbatko</h4>
+                            <p>Palo Alto, CA</p>
+                        </div>
+                        <div class="item-status"></div>
+                    </a>
+                </div>
             </div>
-          </div>
-        </div><!-- /.row -->
+        </aside>
+        <!--sidebar right end-->
+    </section>
+    <!--Global JS-->
+    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/waypoints/waypoints.min.js"></script>
+    <script src="assets/plugins/nanoScroller/jquery.nanoscroller.min.js"></script>
+    <script src="assets/js/application.js"></script>
+    <!--Page Level JS-->
+    <script src="assets/plugins/countTo/jquery.countTo.js"></script>
+    <script src="assets/plugins/weather/js/skycons.js"></script>
+    <!-- FlotCharts  -->
+    <script src="assets/plugins/flot/js/jquery.flot.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.resize.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.canvas.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.image.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.categories.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.crosshair.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.errorbars.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.fillbetween.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.navigate.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.pie.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.selection.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.stack.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.symbol.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.threshold.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.colorhelpers.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.time.min.js"></script>
+    <script src="assets/plugins/flot/js/jquery.flot.example.js"></script>
+    <!-- Morris  -->
+    <script src="assets/plugins/morris/js/morris.min.js"></script>
+    <script src="assets/plugins/morris/js/raphael.2.1.0.min.js"></script>
+    <!-- Vector Map  -->
+    <script src="assets/plugins/jvectormap/js/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="assets/plugins/jvectormap/js/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- ToDo List  -->
+    <script src="assets/plugins/todo/js/todos.js"></script>
+    <!--Load these page level functions-->
+    <script>
+        $(document).ready(function() {
+            app.timer();
+            app.map();
+            app.weather();
+            app.morrisPie();
+        });
+    </script>
 
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Traffic Statistics: October 1, 2013 - October 31, 2013</h3>
-              </div>
-              <div class="panel-body">
-                <div id="morris-chart-area"></div>
-              </div>
-            </div>
-          </div>
-        </div><!-- /.row -->
+</body>
 
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Traffic Sources: October 1, 2013 - October 31, 2013</h3>
-              </div>
-              <div class="panel-body">
-                <div id="morris-chart-donut"></div>
-                <div class="text-right">
-                  <a href="#">View Details <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-clock-o"></i> Recent Activity</h3>
-              </div>
-              <div class="panel-body">
-                <div class="list-group">
-                  <a href="#" class="list-group-item">
-                    <span class="badge">just now</span>
-                    <i class="fa fa-calendar"></i> Calendar updated
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <span class="badge">4 minutes ago</span>
-                    <i class="fa fa-comment"></i> Commented on a post
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <span class="badge">23 minutes ago</span>
-                    <i class="fa fa-truck"></i> Order 392 shipped
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <span class="badge">46 minutes ago</span>
-                    <i class="fa fa-money"></i> Invoice 653 has been paid
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <span class="badge">1 hour ago</span>
-                    <i class="fa fa-user"></i> A new user has been added
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <span class="badge">2 hours ago</span>
-                    <i class="fa fa-check"></i> Completed task: "pick up dry cleaning"
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <span class="badge">yesterday</span>
-                    <i class="fa fa-globe"></i> Saved the world
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <span class="badge">two days ago</span>
-                    <i class="fa fa-check"></i> Completed task: "fix error on sales page"
-                  </a>
-                </div>
-                <div class="text-right">
-                  <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-money"></i> Recent Transactions</h3>
-              </div>
-              <div class="panel-body">
-                <div class="table-responsive">
-                  <table class="table table-bordered table-hover table-striped tablesorter">
-                    <thead>
-                      <tr>
-                        <th>Order # <i class="fa fa-sort"></i></th>
-                        <th>Order Date <i class="fa fa-sort"></i></th>
-                        <th>Order Time <i class="fa fa-sort"></i></th>
-                        <th>Amount (USD) <i class="fa fa-sort"></i></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>3326</td>
-                        <td>10/21/2013</td>
-                        <td>3:29 PM</td>
-                        <td>$321.33</td>
-                      </tr>
-                      <tr>
-                        <td>3325</td>
-                        <td>10/21/2013</td>
-                        <td>3:20 PM</td>
-                        <td>$234.34</td>
-                      </tr>
-                      <tr>
-                        <td>3324</td>
-                        <td>10/21/2013</td>
-                        <td>3:03 PM</td>
-                        <td>$724.17</td>
-                      </tr>
-                      <tr>
-                        <td>3323</td>
-                        <td>10/21/2013</td>
-                        <td>3:00 PM</td>
-                        <td>$23.71</td>
-                      </tr>
-                      <tr>
-                        <td>3322</td>
-                        <td>10/21/2013</td>
-                        <td>2:49 PM</td>
-                        <td>$8345.23</td>
-                      </tr>
-                      <tr>
-                        <td>3321</td>
-                        <td>10/21/2013</td>
-                        <td>2:23 PM</td>
-                        <td>$245.12</td>
-                      </tr>
-                      <tr>
-                        <td>3320</td>
-                        <td>10/21/2013</td>
-                        <td>2:15 PM</td>
-                        <td>$5663.54</td>
-                      </tr>
-                      <tr>
-                        <td>3319</td>
-                        <td>10/21/2013</td>
-                        <td>2:13 PM</td>
-                        <td>$943.45</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="text-right">
-                  <a href="#">View All Transactions <i class="fa fa-arrow-circle-right"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- /.row -->
-
-      </div><!-- /#page-wrapper -->
-
-    </div><!-- /#wrapper -->
-
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-
-    <!-- Page Specific Plugins -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
-    <script src="js/morris/chart-data-morris.js"></script>
-    <script src="js/tablesorter/jquery.tablesorter.js"></script>
-    <script src="js/tablesorter/tables.js"></script>
-
-  </body>
 </html>
