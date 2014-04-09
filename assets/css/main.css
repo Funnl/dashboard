@@ -501,11 +501,12 @@ display: block;
 color: #fff !important;
 }
 
-.sidebarRight .list-contacts .list-item .list-item-image img {
+.sidebarRight .list-contacts .list-item .list-item-image i {
 float: left;
 width: 30px;
 height: 30px;
-margin-right: 5px;
+margin-top: 8px;
+
 }
 
 .sidebarRight .list-contacts .list-item .list-item-content h4 {
