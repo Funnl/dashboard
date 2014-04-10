@@ -75,9 +75,9 @@ img{
     float: left;
     width: 240px;
     min-height: 80px;
-    padding: 0 0 0 2px;
+    padding: 0 0 0 0px;
     position: relative;
-    background: #8ad1c9 url('../img/logo.png') no-repeat 102px 40px; 
+    background: #8ad0c8 url('../img/logo.png') no-repeat 102px 40px; 
     /* original color
     background: #1abc9c url('../img/logo.png') no-repeat 25px 26px; */
 
