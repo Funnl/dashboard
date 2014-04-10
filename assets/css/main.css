@@ -78,6 +78,10 @@ img{
     padding: 0 0 0 2px;
     position: relative;
     background: #8ad0c8 url('../img/logo.png') no-repeat 25px 26px; 
+    background-size: 25px 26px;
+    background-size: 89px;
+    background-position: center;
+    background-position-x: 56px;
     /*background: #8ad0c8 url('../img/logo.png') no-repeat 102px 40px; */
     /* original color
     background: #8ad0c8 url('../img/logo.png') no-repeat 25px 26px; */
