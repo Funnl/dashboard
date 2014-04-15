@@ -3,12 +3,24 @@ var chart = c3.generate({
     bindto: '#area-chart',
     data: {
         columns: [
-            ['data1', 300, 350, 300, 0, 0, 0],
-            ['data2', 130, 100, 140, 200, 150, 50]
+            ['Visitors', 999, 350, 300, 0, 0, 0],
+            ['Conversions', 130, 100, 140, 200, 150, 50]
         ],
         types: {
-            data1: 'area',
-            data2: 'area-spline'
+            Visitors: 'area',
+            Conversions: 'area-spline'
+        }
+    },
+    axis: {
+        x: {
+            label: 'X Label'
+        },
+        y: {
+            label: 'Y Label'
+        },
+        y2: {
+            show: true,
+            label: 'Y2 Label'
         }
     }
 });
