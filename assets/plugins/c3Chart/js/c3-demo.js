@@ -33,7 +33,6 @@ var chart = c3.generate({
     data: {
         x: 'x',
         columns: [
-
             ['x', '14', '13', '12', '11', '10', '9', '8', '7', '6', '5', '4', '3', '2', '1', '0'],
             ['Overall Health', 70, 69, 69, 66, 68, 71, 72, 75, 76, 76, 78, 78, 79, 78, 80]
         ]
@@ -47,6 +46,29 @@ var chart = c3.generate({
         },
         y: {
             label: 'Health Score'
+        }
+    }
+});
+
+});
+
+$(function () {
+var chart = c3.generate({
+    bindto: '#retention-chart',
+    data: {
+        columns: [
+            ['Organic', 100, 70, 65, 64, 54, 30, 20, 18, 17, 17, 16, 10, 10],
+            ['Referral', 100, 75, 74, 40, 34, 34, 33, 33, 30, 28, 10, 8, 5],
+            ['Social', 100, 90, 30, 29, 28, 27, 26, 25, 20, 14, 12, 8, 0],
+            ['Direct', 100, 95, 86, 72, 51, 50, 48, 47, 45, 30, 30, 29, 29]
+        ]
+    },
+    axis: {
+        x: {
+            label: 'Months after Conversion'
+        },
+        y: {
+            label: 'Percentage of customers Remaining'
         }
     }
 });

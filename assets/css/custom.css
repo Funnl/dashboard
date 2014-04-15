@@ -1,3 +1,8 @@
+.fa-exclamation-circle {
+  cursor: pointer;
+  color:#797979;
+}
+
 .tile-caution {
   background-color: #F8C839;
   color: #fff;
