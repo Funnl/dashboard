@@ -1,3 +1,69 @@
-.round {
-  border-radius: 50%;
-  }
+.tile-caution {
+  background-color: #F8C839;
+  color: #fff;
+}
+
+.tile-approaching {
+  background-color: #64A7E6;
+  color: #fff;
+}
+
+.tile-healthy {
+  background-color: #293949;
+  color: #fff;
+}
+
+.tile-warning {
+  background-color: #D74254;
+  color: #fff;
+}
+
+.tile-1 {
+  background-color: #293949;
+  color: #fff;
+}
+
+.tile-2 {
+  background-color: #3C3C4C;
+  color: #fff;
+}
+
+.tile-3 {
+  background-color: #4E3F50;
+  color: #fff;
+}
+
+.tile-4 {
+  background-color: #614153;
+  color: #fff;
+}
+
+.tile-5 {
+  background-color: #744456;
+  color: #fff;
+}
+
+.tile-6 {
+  background-color: #86475A;
+  color: #fff;
+}
+
+.tile-7 {
+  background-color: #994A5D;
+  color: #fff;
+}
+
+.tile-8 {
+  background-color: #AC4D60;
+  color: #fff;
+}
+
+.tile-9 {
+  background-color: #BF4F63;
+  color: #fff;
+}
+
+.tile-10 {
+  background-color: #e4556a;
+  color: #fff;
+}

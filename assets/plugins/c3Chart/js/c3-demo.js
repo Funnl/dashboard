@@ -29,6 +29,32 @@ var chart = c3.generate({
 
 $(function () {
 var chart = c3.generate({
+    bindto: '#performance-chart',
+    data: {
+        x: 'x',
+        columns: [
+
+            ['x', '14', '13', '12', '11', '10', '9', '8', '7', '6', '5', '4', '3', '2', '1', '0'],
+            ['Overall Health', 70, 69, 69, 66, 68, 71, 72, 75, 76, 76, 78, 78, 79, 78, 80]
+        ]
+    },
+    axis: {
+        x: {
+            label: 'Days Ago TODO: fix Axis ticks',
+            tick: {
+                format: function (x) { return x }
+            }
+        },
+        y: {
+            label: 'Health Score'
+        }
+    }
+});
+
+});
+
+$(function () {
+var chart = c3.generate({
      bindto: '#combination-chart',
     data: {
         columns: [
